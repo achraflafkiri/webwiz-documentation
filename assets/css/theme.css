@@ -14416,7 +14416,7 @@ a.text-link:hover {
 }
 
 .single-col-max {
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 
 /* Header */
@@ -14945,6 +14945,12 @@ a.text-link:hover {
   z-index: 10;
 }
 
+.cta-section .card {
+  img {
+    width: 50px;
+  }
+}
+
 /* printing  */
 @media print {
   #docs-sidebar {
@@ -14973,6 +14979,20 @@ a.text-link:hover {
     display: block;
     padding-top: 0.5rem;
   }
+}
+
+.section-intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.section-intro .card {
+  transition: all 0.3s linear;
+}
+
+.section-intro .card:hover {
+  box-shadow: 0 0 10px #cdcdcd;
 }
 
 /*# sourceMappingURL=theme.css.map */
